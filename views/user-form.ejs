@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Person Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <h1>Person Details</h1>
+  <form method="POST">
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" value="<%= user ? user.fname : '' %>" >
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" value="<%= user ? user.lname : '' %>" >
+    <label for="age">Age:</label>
+    <input type="number" name="age" value="<%= user ? user.age : '' %>" >
+    <label for="gender">Gender:</label>
+    <input type="text" name="gender" value="<%= user ? user.gender : '' %>" >
+    <label for="education">Education:</label>
+    <input type="text" name="education" value="<%= user ? user.education : '' %>" >
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" name="phoneNumber" value="<%= user ? user.phoneNumber : '' %>" >
+    <label for="email">Email:</label>
+    <input type="email" name="email" value="<%= user ? user.email : '' %>" >
+    <button type="submit">Save</button>
+  </form>
+
+  
+</body>
+</html>

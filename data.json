@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "fname": "krishndas",
+    "lname": "das",
+    "age": "19",
+    "gender": "male",
+    "education": "degree",
+    "phoneNumber": "8606009733",
+    "email": "krishndasp004@gmail.com"
+  },
+  {
+    "id": 2,
+    "fname": "megha",
+    "lname": "das",
+    "age": "21",
+    "gender": "female",
+    "education": "nursing",
+    "phoneNumber": "8606009733",
+    "email": "krishnadasp004@gmail.com"
+  }
+]

@@ -1,0 +1,9 @@
+<% if (errors ? errors.length > 0 : false) { %>
+    <% for (let error of errors) { %>
+      <% if (error.param === 'fname') { %>
+          <script>
+              alert('<%= error.msg %>');
+          </script>
+      <% } %>
+  <% } %>
+  <% } %>
